@@ -10,8 +10,7 @@ docker run --name ncwms_1 -p 32768:8080 --volumes-from gribapi_1 -v $PWD/data:/d
 
 Download example of netcdf dataset in data/, by example :
 ‘‘‘
-wget https://s3.amazonaws.com/metro-extracts.mapzen.com/toulouse_france.osm2pgsq
-l-shapefiles.zip
+wget wget ftp://ftp.cdc.noaa.gov/Datasets/udel.airt.precip/precip.mon.total.v401.nc
 ‘‘‘
 
 Open url : http://192.168.99.100:32768/ncWMS/admin/ user:admin, password:ncWMS
