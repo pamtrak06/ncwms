@@ -2,16 +2,16 @@
 wms for netcdf
 
 See usage from http://www.resc.rdg.ac.uk/trac/ncWMS/wiki/DownloadPage
-‘‘‘
+```
 docker run --name gribapi_1 -v $PWD/data:/data pamtrak06/gribapi 
 
 docker run --name ncwms_1 -p 32768:8080 --volumes-from gribapi_1 -v $PWD/data:/data pamtrak06/ncwms 
-‘‘‘
+```
 
 Download example of netcdf dataset in data/, by example :
-‘‘‘
+```
 wget wget ftp://ftp.cdc.noaa.gov/Datasets/udel.airt.precip/precip.mon.total.v401.nc
-‘‘‘
+```
 
 Open url : http://192.168.99.100:32768/ncWMS/admin/ user:admin, password:ncWMS
 
