@@ -39,7 +39,5 @@ Download an example coming from site http://dd.weather.gc.ca/analysis/precip/rdp
 ```
 cd /data
 wget http://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/24/CMC_RDPA_APCP-024-0100cutoff_SFC_0_ps10km_2016052212_000.grib2
-cd /gribapi/bin/
-
 ```
-
+Conversion could be done by cdo (https://code.zmaw.de/projects/cdo/wiki/Cdo#Documentation) or gribapi (https://software.ecmwf.int/wiki/display/GRIB/grib_to_netcdf)
